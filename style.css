@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { 
+    margin-left: 0; 
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 { 
+    width: 100%; 
+}
+.span_2_of_3 { 
+    width: 66.13%; 
+}
+.span_1_of_3 { 
+    width: 32.26%; 
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 1200px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+h1, h2, h3, h4, p {
+    opacity: 0.7;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: .3em;
+    background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+hr {
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+     letter-spacing: .2em;
+}
+
+h2, p {
+    text-align: center;
+    margin: 15px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+input {
+    margin: 5px;
+    height: 25px;
+    width: 32px;
+}
+
+input[type="text"]{
+    width: 60px;
+    opacity: 0.7;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+}
+
+.inputs {
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid rgba(0,0,0,0.7);
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#linear-bg {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+#left-right-bg {
+    background-image: linear-gradient(to left, #e66465, #9198e5);
+}
+
+#degrees-bg {
+    background: linear-gradient(45deg, #9198e5, #e66465);
+}
+
+#turn-bg {
+    background: linear-gradient(0.25turn, #9198e5, #ebf8e1, #e66465);
+}
+
+#block-shade-bg {
+    background: linear-gradient(to left, #9198e5, #e66465 50%, #eee 75%, #9198e5 75%);
+}
+
+button {
+    height: 25px;
+    width: 60px;
+    opacity: 0.7;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    margin: 5px;
+}
